@@ -75,7 +75,7 @@ aside {
 
 .navbar-default {
     background-color: white;
-    border-color: fade(@gray-darker, 5%);
+    // border-color: fade(@gray-darker, 5%);
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
@@ -86,6 +86,11 @@ aside {
         &:hover,
         &:focus {
             color: darken(@theme-primary, 10%);
+        }
+        &:before {
+            content: url(img/logo-b.png);
+            // display: block;
+            // background-size: 250px 80px;
         }
     }
     .navbar-header .navbar-toggle {
