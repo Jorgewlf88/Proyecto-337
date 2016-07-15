@@ -364,10 +364,15 @@ header {
   }
 }
 
-.sugestion {
-  padding: 10px;
-  font-size: 10px;
+.copy {
+  padding: 5px;
+  font-size:  13px;
   text-align: center;
+}
+
+.sugestion {
+  .copy();
+  font-size: 10px;
 }
 
 // Extras
@@ -395,5 +400,5 @@ img::-moz-selection {
 }
 
 body {
-  webkit-tap-highlight-color: @gray-darker;
+  webkit-tap-highlight-color: @theme-primary;
 }
